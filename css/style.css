@@ -1,0 +1,258 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+:root{
+    --primary-color:rgb(0, 255, 21);
+    --secondry-color:rgb(0, 0, 0);
+    --success-color:green;
+    --alert-color:rgb(255, 38, 0);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/5053309.jpg);
+    background-size: cover;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5rem;
+    height: 8vh;
+    align-items: center;
+    padding-right: 20px;
+    backdrop-filter: blur(10px);
+}
+nav a{
+    text-decoration: none;
+    color:var(--primary-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    background-color: var(--primary-color);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    animation: animeh4 2s ease;
+}
+.name{
+    padding: 10px;
+    display: flex;
+    width: 45%;
+    gap: 15px;
+    text-align: justify;
+    flex-direction: column;
+}
+.name p{
+    color: white;
+    position: relative;
+    animation: animeh4 2s ease;
+}
+.btn{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    animation: animeh4 2s ease;
+}
+.btn:hover{
+    background-color: rgb(0, 190, 16);
+    color: black;
+}
+.name h4{
+    font-size: 25px;
+    color: var(--primary-color);
+    position: relative;
+    animation: animeh4 2s ease;
+}
+@keyframes animeh4{
+    0%{
+        top: 50px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+.profile-img img{
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid white ;
+    
+}
+.profile-img img:hover{
+    box-shadow: 0px 0px 30px 0px rgb(0, 255, 85);
+    transition: 0.8s;
+    scale: 1.1;
+}
+.profile-img{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+.social-icon {
+    font-size: 35px;
+    display: flex;
+    gap: 20px;
+}
+.social-icon i{
+    color: var(--primary-color);
+}
+.experience{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    height: 70vh;
+    align-items: center;
+}
+.experience h4{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.experience .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+.header{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    margin:5px;
+    padding:25px;
+    color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px -5px white;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header a{
+    text-decoration: none;
+    color: grey;
+}
+.footer{
+    width: 100%;
+    color: blue;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer h5{
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.education{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.education .edu-content{
+    width: 50%;
+    box-shadow: 0px 0px 20px -5px white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    padding: 20px;
+    border-radius:10px;
+}
+.education h4{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.edu-content h5{
+    color: gray;
+}
+.skill{
+    height: 80vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profile-skills{
+    display: flex;
+    width: 50%;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-skills button{
+    width: 20%;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: black;
+    cursor: pointer;
+}
+.profile-skills h6{
+    color: grey;
+}
+.profile-skills h4{
+    color: var(--primary-color);
+}
+.profile-skills p{
+    width: 70%;
+}
+.skill .skills{
+    gap: 20px;
+    display: flex;
+}
+.skills .icons{
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    border-radius: 8px;
+    width: 90px;
+    backdrop-filter: blur(10px);
+    height: 20vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icons i{
+    font-size: 3rem;
+}
+.icons h3{
+    font-size: 10px;
+}
+.icons p{
+    background-color: var(--primary-color);
+    color: black;
+    font-size: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
